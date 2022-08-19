@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Geared Mountain Cycle" ,
+     "id" : 1,
+      "desc": "21 Gear Shimano Derailleurs and Shifters Perfect for leisure as well as for those",
+      "price": 13299,
+      "Image": "../assets/image/cycle.jpg"
+    },
+    {
+      "name": "SS Hybrid Bike ",
+      "id": 2,
+      "desc": "Single-speed for fuss-free riding. Perfect for leisure as well as for those",
+      "price": 5549,
+      "Image": "../assets/image/cycle1.jpg"
+    },
+    {
+      "name": "Adult Mountain Bike",
+      "id": 3,
+      "desc": " ST30 is a 7speed rugged leisure MTB  well as for those  for fuss-free riding. ",
+      "price": 9999,
+      "Image": "../assets/image/cycle2.jpg"
+    },
+    {
+      "name": "Attitude Dominator",
+      "id": 4,
+      "desc": "Single-speed for fuss-free riding. Perfect for leisure as well as for those ",
+      "price": 12390,
+      "Image": "../assets/image/cycle3.jpg"
+    },
+    {
+      "name": "THUNDER 27.5T",
+      "id": 5,
+      "desc":" innovation is a continuous journey focused on crafting better riding experiences ",
+      "price": 9000,
+      "Image":" ../assets/image/cycle4.jpg"
+    },
+    {
+      "name":" Adult Mountain Bike",
+      "id": 6,
+      "desc": "our team has developed the new my bike for riding to school, the office",
+      "price": 7500,
+      "Image": "../assets/image/cycle5.jpg"
+    },
+    {
+      "name": "Mountain Bike",
+      "id": 7,
+      "desc": "20,24,26 inch aluminum alloy mountain frame as photo, paint the office",
+      "price": 2376,
+      "Image": "../assets/image/cycle6.jpg"
+    },
+    {
+      "name": "WOLVERINE 29T",
+      "id": 8,
+      "desc": "The mighty Wolverine is a beast to behold & once you have tamed this beauty",
+      "price": 16149,
+      "Image": "../assets/image/cycle7.jpg"
+    }
+  ]

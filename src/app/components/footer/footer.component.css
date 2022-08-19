@@ -1,0 +1,11 @@
+#footernav {
+    background-color: #0c0c0c;
+    color:#ffff;
+    padding: 3rem;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}

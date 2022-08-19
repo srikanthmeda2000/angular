@@ -1,0 +1,19 @@
+
+
+<div class="login">
+    <div class="login_container">
+        <img routerLink="/" class="login-logo" src="../assets/image/nike-logo.jpg" alt="" style="width:60%;">
+        <div class="login_form">
+            <h1>sign in</h1>
+            <form [formGroup]="LoginForm">
+                <h5>Email</h5>
+                <input type="email" formControllName="email">
+                <h5>password</h5>
+                <input type="password" formControllName="password" >
+                <button class="login_signin_button" (click)="signIn()">sign in</button>
+                <p>By continuing, you agree to Nike Terms of Use and Privacy Policy.</p>
+                <button class="login_create_button" (click)="createAccount()">Create Nike account</button>
+            </form>
+        </div>
+    </div>
+</div>

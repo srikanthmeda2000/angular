@@ -1,0 +1,16 @@
+<div class="checkout">
+
+    <div class="checkout-left">
+<div class="checkout-empty" *ngIf="shopping_cart.getCartLength()==0">
+    <img style="text-align:center;" src="/assets/image/cart.jpg" alt="">
+    <h2 style="text-align:center;">Your shopping basket is empty</h2>
+    <p style="text-align:center;">you have no items in your basket</p>
+</div>
+<div class="checkout-empty" *ngIf="shopping_cart.getCartLength()!=0">
+<p><strong>Shopping Cart</strong></p>
+<app-checkout-products [checkout_products] ="items" (deleteEvent)="deleteEventHandler($event)"></app-checkout-products>
+    </div>
+    <div class="checkout-right">
+        <app-checkout-subtotal></app-checkout-subtotal>
+    </div>
+</div>
