@@ -9,3 +9,7 @@ a{
 a:hover{
     color: white;
 }
+img{
+    width: 16%;
+    padding-bottom: 10%;
+}
