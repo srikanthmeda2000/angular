@@ -16,6 +16,9 @@ import { ProductsComponent } from './components/products/products.component';
 import { CheckoutSubtotalComponent } from './components/checkout-subtotal/checkout-subtotal.component';
 import { CheckoutProductsComponent } from './components/checkout-products/checkout-products.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component';
+import { CheckoutHomeComponent } from './components/checkout-home/checkout-home.component';
+import { ShippingComponent } from './pages/shipping/shipping.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProductsComponent,
    
     CheckoutSubtotalComponent,
-    CheckoutProductsComponent
+    CheckoutProductsComponent,
+    RegisterComponent,
+    CheckoutHomeComponent,
+    ShippingComponent,
   ],
   imports: [
     BrowserModule,

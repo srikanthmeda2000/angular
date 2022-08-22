@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <section class="step-indicator">
+                <div class="step step1 active">
+                    <div class="step-icon"></div>
+                    <p>Login</p>
+                </div>
+                <div class="indicator-line active"></div>
+                <div class="step step2 active">
+                    <div class="step-icon"></div>
+                    <p>Shipping</p>
+                </div>
+                <div class="indicator-line active"></div>
+                <div class="step step3">
+                    <div class="step-icon"></div>
+                    <p>Payment</p>
+                </div>
+                <div class="indicator-line "></div>
+                <div class="step step3">
+                    <div class="step-icon"></div>
+                    <p>Confirmation</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="shipping">
+                <div class="shipping_container">
+                    <div class="shipping_form">
+                        <h1>shipping</h1>
+                        <form>
+                            <h5>name</h5>
+                            <input type="text">
+                            <h5>surname</h5>
+                            <input type="text">
+                            <h5>mobile number</h5>
+                            <input type="number">
+                            <h5>address</h5>
+                            <input type="text" placeholder="flatno,houseno,street">
+                            <h5>pincode</h5>
+                            <input type="number">
+                            <h5>state</h5>
+                            <input type="text">
+                            <h5>city</h5>
+                            <input type="text"><br>
+                            <button class="login_signin_button" routerLink="/shipping">processed to pay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="container">
+                <form>
+                    <div class="subtotal_home" *ngIf="shoppingCart.getCartLength()>0">
+                        <p>subtotal:({{shoppingCart.getCartLength()}} items)</p>
+                        <p><strong>${{shoppingCart.getTotal()}}</strong></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
