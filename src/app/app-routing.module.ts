@@ -5,6 +5,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
+import { PaymentComponent } from './pages/payment/payment.component';
 import { ShippingComponent } from './pages/shipping/shipping.component';
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:'checkout',component:CheckoutComponent},
   {path: 'register' ,component:RegisterComponent},
   {path:'checkout-home',component:CheckoutHomeComponent},
-  { path:'shipping',component:ShippingComponent}
+  { path:'shipping',component:ShippingComponent},
+  {path:'payment',component:PaymentComponent}
 ];
 
 @NgModule({

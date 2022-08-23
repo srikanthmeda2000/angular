@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
 import { CheckoutHomeComponent } from './components/checkout-home/checkout-home.component';
 import { ShippingComponent } from './pages/shipping/shipping.component';
+import { PaymentComponent } from './pages/payment/payment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { ShippingComponent } from './pages/shipping/shipping.component';
     RegisterComponent,
     CheckoutHomeComponent,
     ShippingComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,
