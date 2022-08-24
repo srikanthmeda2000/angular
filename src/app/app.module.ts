@@ -20,6 +20,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { CheckoutHomeComponent } from './components/checkout-home/checkout-home.component';
 import { ShippingComponent } from './pages/shipping/shipping.component';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { ConfirmationComponent } from './pages/confirmation/confirmation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,13 +31,13 @@ import { PaymentComponent } from './pages/payment/payment.component';
     LoginComponent,
     BannerComponent,
     ProductsComponent,
-   
     CheckoutSubtotalComponent,
     CheckoutProductsComponent,
     RegisterComponent,
     CheckoutHomeComponent,
     ShippingComponent,
     PaymentComponent,
+    ConfirmationComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,6 @@ import { PaymentComponent } from './pages/payment/payment.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

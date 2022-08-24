@@ -1,34 +1,35 @@
 <div class="header">
-    <nav class="header-top">
-      <div class="header-menu">
-        <div class="header-menu-icon" routerLink="/">
-          <i class="fa-solid  fa-bars"></i>
-        </div>
-        <div class="header-menu-searchbar">
-          <img routerLink="/" class="header-menu-logo" src="../assets/image/nike-logo.jpg" alt="">
-          <input size="30%" type="text" class="header-menu-input">
-          <div class="header-menu-searchbar-icon">
-            <i class="fa-solid  fa-magnifying-glass"></i>
-          </div>
-        </div>
-        <div routerLink="/login" class="header-menu-signin">
-          <span class="header-menu-top-item">hi, sign</span>
-          <span class="header-menu-bottom-item">Accounts</span>
-        </div>
-        <div routerLink="/login" class="header-menu-signin">
-          <span class="header-menu-top-item">Returns</span>
-          <span class="header-menu-bottom-item"> & Orders</span>
-        </div>
-        <div routerLink="/checkout" class="header-menu-cart">
-          <i class="fa-solid fa-2x fa-cart-shopping"></i>
-          <p class="header-cart-number">{{ shoppingCart.getCartLength() }}</p>
+  <nav class="header-top">
+    <div class="header-menu">
+      <div class="header-menu-icon" routerLink="/">
+        <i class="fa-solid  fa-bars"></i>
+      </div>
+      <div class="header-menu-searchbar">
+        <!-- <img routerLink="/" class="header-menu-logo" src="../assets/image/nike-logo.jpg" alt=""> -->
+        <h3 routerLink="/" class="header-menu-logo">C-store</h3>
+        <input size="30%" type="text" class="header-menu-input">
+        <div class="header-menu-searchbar-icon">
+         <button class="btn btn-primary"><i class="fa-solid  fa-magnifying-glass"></i></button> 
         </div>
       </div>
-    </nav>
-    <nav class="header-bottom">
+      <div routerLink="/login" class="header-menu-signin">
+        <!-- <span class="header-menu-top-item">hi, sign</span> -->
+        <span class="header-menu-bottom-item">Accounts</span>
+      </div>
+      <div routerLink="/login" class="header-menu-signin">
+        <!-- <span class="header-menu-top-item">Returns</span> -->
+        <span class="header-menu-bottom-item">Orders</span>
+      </div>
+      <div routerLink="/checkout" class="header-menu-cart">
+        <i class="fa-solid fa-2x fa-cart-shopping"></i>
+        <p class="header-cart-number">{{ shoppingCart.getCartLength() }}</p>
+      </div>
+    </div>
+  </nav>
+  <!-- <nav class="header-bottom">
       <div class="header-bottom-location-text">
         <span class="header-left-line-one">hi</span>
         <span class="header-left-line-two"> india</span>
       </div>
-    </nav>
-  </div>
+    </nav> -->
+</div>

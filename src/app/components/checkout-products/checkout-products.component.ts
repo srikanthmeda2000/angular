@@ -7,16 +7,16 @@ import { ShoppingCartService } from 'src/app/service/shopping_cart.service';
   styleUrls: ['./checkout-products.component.css']
 })
 export class CheckoutProductsComponent implements OnInit {
-@Input() checkout_products: any;
-@Output() deleteEvent:EventEmitter<any>=new EventEmitter()
-  constructor(public shopping_cart_service:ShoppingCartService) { }
+  @Input() checkout_products: any;
+  @Output() deleteEvent: EventEmitter<any> = new EventEmitter()
+  constructor(public shopping_cart_service: ShoppingCartService) { }
 
   ngOnInit(): void {
-    console.log('products',this.checkout_products)
+    console.log('products', this.checkout_products)
   }
-  removeItem(p:any){
-this.shopping_cart_service.removeItem(p)
-this.deleteEvent.emit(p)
+  removeItem(p: any) {
+    this.shopping_cart_service.removeItem(p)
+    this.deleteEvent.emit(p)
   }
 
 }

@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <section class="step-indicator">
-                <div class="step step1">
+            <section class="step-indicator active">
+                <div class="step step1 active">
                     <div class="step-icon"></div>
                     <p>Login</p>
                 </div>
@@ -11,7 +11,7 @@
                     <div class="step-icon"></div>
                     <p>Shipping</p>
                 </div>
-                <div class="indicator-line active"></div>
+                <div class="indicator-line"></div>
                 <div class="step step3">
                     <div class="step-icon"></div>
                     <p>Payment</p>
@@ -31,21 +31,14 @@
                     <div class="shipping_form">
                         <h1>shipping</h1>
                         <form>
-                            <h5>name</h5>
-                            <input type="text">
-                            <h5>surname</h5>
-                            <input type="text">
-                            <h5>mobile number</h5>
-                            <input type="number">
-                            <h5>address</h5>
-                            <input type="text" placeholder="flatno,houseno,street">
-                            <h5>pincode</h5>
-                            <input type="number">
-                            <h5>state</h5>
-                            <input type="text">
-                            <h5>city</h5>
-                            <input type="text"><br>
-                            <button class="login_signin_button" routerLink="/payment">processed to pay</button>
+                            <input type="text" formControllerName="name" placeholder="Name">
+                            <input type="text" placeholder="Surname">
+                            <input type="number" placeholder="Mobile Number">
+                            <input type="text" placeholder="Flatno,Houseno,Street">
+                            <input type="number" placeholder="Pincode">
+                            <input type="text" placeholder="State">
+                            <input type="text" placeholder="City"><br>
+                            <button class="login_signin_button" routerLink="/payment">proceed to pay</button>
                         </form>
                     </div>
                 </div>

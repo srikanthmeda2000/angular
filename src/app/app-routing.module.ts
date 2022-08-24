@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CheckoutHomeComponent } from './components/checkout-home/checkout-home.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { ConfirmationComponent } from './pages/confirmation/confirmation.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PaymentComponent } from './pages/payment/payment.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'register' ,component:RegisterComponent},
   {path:'checkout-home',component:CheckoutHomeComponent},
   { path:'shipping',component:ShippingComponent},
-  {path:'payment',component:PaymentComponent}
+  {path:'payment',component:PaymentComponent},
+  {path:'confirmation',component:ConfirmationComponent}
 ];
 
 @NgModule({

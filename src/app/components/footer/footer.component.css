@@ -3,7 +3,7 @@
     padding: 0%;
 }
 #footernav {
-    background-color: #0c0c0c;
+    background-color: #545555;
     color:#ffff;
     padding: 3rem;
 }
@@ -13,7 +13,11 @@ a{
 a:hover{
     color: white;
 }
-img{
+/* img{
     width: 16%;
     padding-bottom: 10%;
+} */
+.header-menu{
+    font-size: x-large;
+    font-style: italic;
 }

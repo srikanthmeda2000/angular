@@ -80,63 +80,11 @@ body {
       bottom: -20px;
     }
   }
-  .input{
-    margin: 15%;
-    width: 100%;
-    height: 300px;
-    /* border: 1px solid #c2c2c2; */
+  .confirmation-title{
+    text-align: center;
+    /* font-size: xx-large;   */
+    padding-top: 10%;
   }
-  .payment-title{
-    width: 80%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    height:30px;
-    display: flex;
-    /* border: 1px solid #c2c2c2 ; */
+  .confirmation-title > button{
+    margin-bottom: 20px;
   }
-  .payment-span{
-    margin-left: 5px;
-  }
-  .payment-body{
-    margin-top: 2px;
-  }
-  .payment-input{
-    width: 90%;
-    margin-left: 10px; 
-  }
-  .payment-input-type{
-    display: flex;
-  }
-  .payment-input-group{
-    /* margin-left: 50px; */
-    font-size: large;
-  }
-  .custom-select{
-    font-size: large;
-    width: 20%;
-    margin-left: 10px;
-  }
-  .payment-button{
-    margin-top: 4%;
-    /* background-color: rgb(157, 156, 248); */
-    border-radius:4px ;
-  }
-  .form-check-input1{
-    margin-top: 4%;
-  }
-  .form-check-label-input{
-    margin-left: 4%;
-  }
-  .form-check-label{
-    margin-left: 4%;
-  }
-  .subtotal_home{
-    align-items: center;
-    padding-top: 23%;
-    padding-left: 18%;
-    margin-top: 10%;
-    margin-left: 40%;
-    border: 1px solid black;
-    width: 50%;
-    height: 300px;
-}

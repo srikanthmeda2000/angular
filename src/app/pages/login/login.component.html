@@ -1,17 +1,18 @@
 <div class="login">
     <div class="login_container">
-        <img routerLink="/" class="login-logo" src="../assets/image/nike-logo.jpg" alt="" style="width:60%;">
+        <!-- <img routerLink="/" class="login-logo" src="../assets/image/nike-logo.jpg" alt="" style="width:60%;"> -->
+        <h3 routerLink="/" style="font-size: x-large;font-style:italic;">C-store</h3>
         <div class="login_form">
             <h1>sign in</h1>
-            <form [formGroup]="LoginForm">
+            <form [formGroup]="loginForm" (ngSubmit)="signIn()">
                 <h5>Email</h5>
-                <input type="email" formControllName="email">
+                <input type="text" name="email" class="form-control " formControllName="email" required>
                 <h5>password</h5>
-                <input type="password" formControllName="password" >
-                <button class="login_signin_button" (click)="signIn()">sign in</button>
-                <p>By continuing, you agree to Nike Terms of Use and Privacy Policy.</p>
-                <button class="login_create_button" (click)="createAccount()" routerLink="/register">Create Nike account</button>
+                <input type="password" name="password"  class="form-control" formControllName="password" required >
+                <button class="login_signin_button" type="submit">sign in</button>
             </form>
+            <p>By continuing, you agree to Nike Terms of Use and Privacy Policy.</p>
+            <button class="login_create_button" (click)="createAccount()" routerLink="/register" >Create Nike account</button>
         </div>
     </div>
 </div>

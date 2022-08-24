@@ -82,7 +82,7 @@ body {
   }
   .shipping{
     margin-top: 40px;
-    margin-left: 10px;
+    margin-left: 60px;
     display: flex;
     flex-direction: column; 
     height: 100vh;
@@ -96,7 +96,7 @@ body {
 .shipping_form{
     border: solid lightgrey 1px;
     padding: 20px;
-    width: 300px;
+    width: 400px;
 }
 .shipping_form >h1{
     font-weight: 500;
@@ -134,4 +134,7 @@ form >input{
     border: 1px solid black;
     width: 50%;
     height: 300px;
+}
+.error{
+  color: red;
 }
