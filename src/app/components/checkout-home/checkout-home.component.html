@@ -34,15 +34,22 @@
                 <div class="login_container">
                     <div class="login_form">
                         <h1>login</h1>
-                        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
-                            <h5>Email</h5>
-                            <input type="email" name="email" formControllName="email" class="form-control ">
-                            <h5>password</h5>
-                            <input type="password" name="password" formControllName="password" class="form-control mt-1 ">
-                            <p>By continuing, you agree to Nike Terms of Use and Privacy Policy.</p>
-                            <button class="btn btn-primary" [disabled]="loginForm.invalid " >login</button>
-                            <!-- <button class="login_signin_button" routerLink="/shipping" [disabled]="loginForm.invalid">login</button> -->
+                        <form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
+                            <!-- <div class="row"> -->
+                            <!-- <div class="mb-2 input"> -->
+                                <!-- <label for="username">User Name/E-mail</label> -->
+                                <input type="email" class="form-control" formControlName="email"
+                                    placeholder="Enter Your User Name or E-mail" required>
+                                <!-- <span *ngIf="loginForm.username.touched && !loginForm.username.invalid"> Pleas Enter User Name</span> -->
+                            <!-- </div> -->
+                            <!-- <div class="mb-2 input"> -->
+                                <!-- <label for="password">Password</label> -->
+                                <input type="password" class="form-control" formControlName="password"
+                                    placeholder="Enter your Password" required>
+                                <!-- <span *ngIf="form.passowrd.touched && !form.password.invalid"> Enter your password</span> -->
+                            <!-- </div> -->
                         </form>
+                            <button class="btn btn-primary" [disabled]="loginForm.invalid" type="submit" routerLink="/shipping">Log In</button>
                     </div>
                 </div>
             </div>
@@ -51,7 +58,7 @@
             <div class="login">
                 <div class="login_container">
                     <div class="login_form">
-                        <form style=" height: 265px;padding-top: 120px;">
+                        <form style=" height: 175px;padding-top: 60px;">
                             <button class="login_signin_button" routerLink="/shipping">Guest</button>
                         </form>
                     </div>

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { ShoppingCartService } from 'src/app/service/shopping_cart.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { ShoppingCartService } from 'src/app/service/shopping_cart.service';
   styleUrls: ['./payment.component.css']
 })
 export class PaymentComponent implements OnInit {
-  constructor(public shopping_cart: ShoppingCartService,public shoppingCart:ShoppingCartService) { }
+  constructor(public shopping_cart: ShoppingCartService,public shoppingCart:ShoppingCartService,private fb: FormBuilder) { }
 
 
   public one: boolean = false;
@@ -16,6 +17,9 @@ export class PaymentComponent implements OnInit {
    
 
     }
+    paymentForm = this.fb.group({
+      cardnumber: ['',Validators.required] 
+    })
 
   card() {
     this.one = true;

@@ -19,8 +19,8 @@ export class CheckoutHomeComponent implements OnInit {
   });
 
   onSubmit(){
-    const data = this.loginForm.value;
-    console.log(data);
+    // const data = this.loginForm.value;
+    // console.log(data);
   }
 
 }

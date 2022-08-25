@@ -3,16 +3,16 @@
         <!-- <img routerLink="/" class="register-logo" src="../assets/image/nike-logo.jpg" alt="" style="width:60%;"> -->
         <h3 routerLink="/" style="font-size: x-large;font-style:italic;">C-store</h3>
         <div class="register_form">
-            <h1>sign in</h1>
+            <h1>Register</h1>
             <form>
                 <h5>First Name</h5>
-                <input type="text" formControllName="Name">
+                <input type="text" formControllName="Name" class="form-controller" required>
                 <h5>Sur Name</h5>
-                <input type="text" formControllName="sur Name">
+                <input type="text" formControllName="sur Name"  class="form-controller"required>
                 <h5>Email</h5>
-                <input type="email" formControllName="email">
+                <input type="email" formControllName="email"  class="form-controller"required>
                 <h5>password</h5>
-                <input type="password" formControllName="password">
+                <input type="password" formControllName="password"  class="form-controller"required>
                 <p>By continuing, you agree to Nike Terms of Use and Privacy Policy.</p>
                 <button class="register_login_button" routerLink="/login">login in</button>
             </form>

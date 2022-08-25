@@ -30,15 +30,34 @@
                 <div class="shipping_container">
                     <div class="shipping_form">
                         <h1>shipping</h1>
-                        <form>
-                            <input type="text" formControllerName="name" placeholder="Name">
-                            <input type="text" placeholder="Surname">
-                            <input type="number" placeholder="Mobile Number">
-                            <input type="text" placeholder="Flatno,Houseno,Street">
-                            <input type="number" placeholder="Pincode">
-                            <input type="text" placeholder="State">
-                            <input type="text" placeholder="City"><br>
-                            <button class="login_signin_button" routerLink="/payment">proceed to pay</button>
+                        <form [formGroup]="adderssForm" novalidate (ngSubmit)="onSubmit()">
+                            <div class="shipping_form_body">
+                                <input type="text" formControlName="fullname" class="form-control"
+                                    placeholder="Full Name" required>
+
+                                <input type="number" formControlName="phonenumber" class="form-control"
+                                    placeholder="Mobile Number" required>
+
+                                <input type="text" formControlName="doorno" class="form-control"
+                                    placeholder="H.No or Flat No" required>
+
+                                <input type="text" formControlName="street" class="form-control"
+                                    placeholder="Street Name" required>
+
+                                <input type="text" formControlName="city" class="form-control" placeholder="City Name"
+                                    required>
+
+                                <input type="text" formControlName="state" class="form-control" placeholder="State"
+                                    required>
+
+                                <input type="number" formControlName="pincode" class="form-control"
+                                    placeholder="pincode" required>
+
+                            </div>
+                            <div class="shipping_form_body_button">
+                                <button class="btn btn-primary" [disabled]="adderssForm.invalid" routerLink="/payment" type="submit">proceed
+                                    to pay</button>
+                            </div>
                         </form>
                     </div>
                 </div>
