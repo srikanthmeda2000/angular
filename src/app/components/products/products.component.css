@@ -2,7 +2,8 @@
     object-fit: contain;
     width: 200px;
     height: 120px;
-    transition: 0.3s ease-in-out;
+    
+    
 }
 .product>mat-card >img{
     transition: 0.3s ease-in-out;
@@ -12,7 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+   
 }
 .product > mat-Card {
     display: flex;
@@ -27,4 +28,12 @@
     background-color: #f0c14b;
     border: 1px solid;
 
+}
+.product:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    transition: transform 100ms linear;
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-delay: 0s;
 }

@@ -13,7 +13,7 @@ export class ConfirmationComponent implements OnInit {
   private _jsonURL='assets/data/products.json'
   @Input() checkout_products: any;
   // @Output() deleteEvent: EventEmitter<any> = new EventEmitter()
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,public shopping_cart: ShoppingCartService,public shoppingCart:ShoppingCartService) { }
   getJson():Observable<any>{
     return this.http.get(this._jsonURL)
   }

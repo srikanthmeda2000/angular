@@ -29,5 +29,13 @@
     <h1>Congratulations Your Order Is Placed</h1>
     <h1>Thank you For Shopping</h1>
     <p>OrderID:145628</p>
-    <button routerLink="/" class="btn btn-info">Shopping More</button>
+    <div class="container">
+        <form>
+            <div class="subtotal_home" *ngIf="shoppingCart.getCartLength()>0">
+                <p>subtotal:({{shoppingCart.getCartLength()}} items)</p>
+                <p><strong>${{shoppingCart.getTotal()}}</strong></p>
+            </div>
+        </form>
+    </div>
+    <button routerLink="/" class="btn btn-info">Shop More</button>
 </div>
